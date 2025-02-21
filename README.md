@@ -1,5 +1,7 @@
 # E-Commerce Project
 
+this is just a school project, nothing serious
+
 This project is an e-commerce application that manages customer, product and order data. 
 It allows the addition of customers and products via XML files. The project leverages basic
 data management and XML parsing to integrate information into the system.
