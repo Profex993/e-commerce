@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Products>
+  <Product>
+    <name>Phone X</name>
+    <desc>OLED display phone</desc>
+    <price>999</price>
+    <stock>50</stock>
+  </Product>
+  <Product>
+    <name>Headphones</name>
+    <desc>Noise-canceling</desc>
+    <price>199</price>
+    <stock>100</stock>
+  </Product>
+  <Product>
+    <name>Laptop</name>
+    <desc>RTX 4070 gaming</desc>
+    <price>1899</price>
+    <stock>25</stock>
+  </Product>
+  <Product>
+    <name>Watch</name>
+    <desc>Fitness tracker</desc>
+    <price>299</price>
+    <stock>75</stock>
+  </Product>
+</Products>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+  <Customer>
+    <name>John Doe</name>
+    <email>johndoe@example.com</email>
+    <phone>123-456-7890</phone>
+    <stock_quantity>50</stock_quantity>
+    <registration_date>2024-01-01</registration_date>
+  </Customer>
+  <Customer>
+    <name>Jane Smith</name>
+    <email>janesmith@example.com</email>
+    <phone>987-654-3210</phone>
+    <stock_quantity>100</stock_quantity>
+    <registration_date>2024-02-15</registration_date>
+  </Customer>
+  <Customer>
+    <name>Robert Brown</name>
+    <email>robertb@example.com</email>
+    <phone>555-555-5555</phone>
+    <stock_quantity>25</stock_quantity>
+    <registration_date>2023-12-20</registration_date>
+  </Customer>
+  <Customer>
+    <name>Alice Green</name>
+    <email>alicegreen@example.com</email>
+    <phone>444-444-4444</phone>
+    <stock_quantity>75</stock_quantity>
+    <registration_date>2024-03-10</registration_date>
+  </Customer>
+</Customers>
