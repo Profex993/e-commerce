@@ -6,9 +6,9 @@ class Program
     //method Main contains the logic behind UI
     static void Main()
     {
+        Console.WriteLine("Welcome to E-Commerce Management System");
         while (true)
         {
-            Console.WriteLine("Welcome to E-Commerce Management System");
             Console.WriteLine("1. Customers\n2. Products\n3. Orders\n4. Order Items\n5. Payments\n6. Import Product from XML\n7. Import Customer from XML\n8. Exit");
             Console.Write("Select an option: ");
 

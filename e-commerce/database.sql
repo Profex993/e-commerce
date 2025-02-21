@@ -30,6 +30,7 @@ CREATE TABLE Orders (
     order_date DATETIME DEFAULT GETDATE(),
     status NVARCHAR(50) DEFAULT 'Pending',
     total_price FLOAT NOT NULL,
+    order_code INT UNIQUE,
     FOREIGN KEY (customer_id) REFERENCES Customers(id) ON DELETE CASCADE
 );
 
@@ -54,3 +55,32 @@ CREATE TABLE Payments (
     status NVARCHAR(50) DEFAULT 'Pending',
     FOREIGN KEY (order_id) REFERENCES Orders(id) ON DELETE CASCADE
 );
+
+
+-- test data 
+
+INSERT INTO Customers (name, email, phone, address)
+VALUES
+('John Doe', 'johndoe@example.com', '123-456-7890', '123 Elm St, Springfield'),
+('Jane Smith', 'janesmith@example.com', '987-654-3210', '456 Oak St, Shelbyville');
+
+INSERT INTO Products (name, description, price, stock_quantity)
+VALUES
+('Laptop', 'High-performance laptop with 16GB RAM', 999.99, 50),
+('Smartphone', 'Latest smartphone with 128GB storage', 699.99, 100);
+
+INSERT INTO Orders (customer_id, order_date, status, total_price)
+VALUES
+(1, '2025-02-20', 'Pending', 1699.98),
+(2, '2025-02-21', 'Shipped', 699.99);
+
+INSERT INTO OrderItems (order_id, product_id, quantity, price)
+VALUES
+(1, 1, 1, 999.99),
+(1, 2, 1, 699.99),
+(2, 2, 1, 699.99);
+
+INSERT INTO Payments (order_id, payment_date, amount, payment_method, status)
+VALUES
+(1, '2025-02-20', 1699.98, 'Credit Card', 'Completed'),
+(2, '2025-02-21', 699.99, 'PayPal', 'Pending');

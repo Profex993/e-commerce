@@ -86,8 +86,8 @@ namespace e_commerce.Database
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    Order order = new Order(
-                        (int)reader["id"],
+                    Order order = new(
+                        (int)reader["order_code"],
                         (int)reader["customer_id"],
                         (DateTime)reader["order_date"],
                         (double)reader["total_price"]
@@ -140,7 +140,6 @@ namespace e_commerce.Database
                 if (reader.Read())
                 {
                     order = new Order(
-                        (int)reader["id"],
                         (int)reader["order_code"],
                         (int)reader["customer_id"],
                         (DateTime)reader["order_date"],

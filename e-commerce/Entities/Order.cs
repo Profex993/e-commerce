@@ -12,7 +12,7 @@ namespace e_commerce.Entities
         public double TotalPrice { get; set; }
 
 
-        public Order(int id, int orderCode, int customerId, DateTime? orderDate, double totalPrice)
+        public Order(int id, int customerId,  DateTime? orderDate, double totalPrice, int orderCode)
         {
             Id = id;
             CustomerId = customerId;
@@ -32,6 +32,7 @@ namespace e_commerce.Entities
 
         public override string ToString()
         {
+            Console.WriteLine(CustomerId);
             return $"Order Code: {OrderCode}, Customer Name: {CustomerDAO.Instance.GetById(CustomerId).Name}," +
                 $" Order Date: {OrderDate?.ToString("yyyy-MM-dd") ?? "N/A"}, Total Price: ${TotalPrice}";
         }
