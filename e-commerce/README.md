@@ -1,10 +1,10 @@
-﻿#E-Commerce Project
+﻿# E-Commerce Project
 
 This project is an e-commerce application that manages customer, product and order data. 
 It allows the addition of customers and products via XML files. The project leverages basic
 data management and XML parsing to integrate information into the system.
 
-#Setup instructions
+# Setup instructions
 
 1. download the project from releases
 2. run database.sql script in your Microsoft SQL server instance
